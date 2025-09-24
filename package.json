@@ -1,0 +1,21 @@
+{
+  "name": "twentytwentyfive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start src/frontend.js src/editor.js",
+    "start:hot": "wp-scripts start --hot",
+    "build": "wp-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.24.0",
+    "sass": "^1.93.0"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0"
+  }
+}

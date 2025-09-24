@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+// media query
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+
+  @if ($size) {
+    @media (width > $size) {
+      @content;
+    }
+  } @else {
+    @error '`#{$key}` does not exist in the $breakpoints';
+  }
+}
+
+//Breakpoints
+@mixin atSmall {
+  @media (max-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atSmallMedium {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+

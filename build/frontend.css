@@ -1,0 +1,84 @@
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/front-end.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.full-height-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-decoration {
+  position: relative;
+  z-index: 1;
+}
+.hero-decoration--container {
+  position: absolute;
+  top: -50vh;
+}
+.hero-decoration > .wp-block-group {
+  position: relative;
+}
+.hero-decoration svg {
+  width: 58vw;
+  height: 100vh;
+  min-height: 650px;
+  left: 0;
+}
+
+.homepage-hero {
+  position: relative;
+  z-index: 2;
+}
+
+.video-section,
+.inner-hero {
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+@media (max-width: 960px) {
+  header .header-contact {
+    display: none;
+  }
+}
+
+.wp-block-button__link {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/*# sourceMappingURL=frontend.css.map*/

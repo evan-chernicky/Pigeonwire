@@ -1,0 +1,15 @@
+@use '../abstracts' as base;
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    @include base.atMedium {
+    .header-contact {
+            display: none;
+        }
+    }
+}
+

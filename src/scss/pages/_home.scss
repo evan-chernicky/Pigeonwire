@@ -1,0 +1,31 @@
+.hero-decoration {
+    position: relative;
+    z-index: 1;
+
+    &--container{
+        position: absolute;
+        top: -50vh;
+    }
+
+    & > .wp-block-group {
+        position: relative;
+    }
+
+    svg {
+        width: 58vw;
+        height: 100vh;
+        min-height: 650px;
+        left: 0;
+    }
+}
+
+.homepage-hero {
+    position: relative;
+    z-index: 2;
+}
+
+.video-section,
+.inner-hero  {
+    position: relative;
+    z-index: 2;
+}
