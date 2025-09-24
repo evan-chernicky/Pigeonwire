@@ -1,1 +1,1 @@
-Pigeonwire Wordpress Theme
+Pigeonwire custom Wordpress Theme based on TwentyTwentyFive

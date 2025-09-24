@@ -52,6 +52,14 @@ if ( ! function_exists( 'twentytwentyfive_enqueue_styles' ) ) :
 		wp_enqueue_style('custom', get_theme_file_uri('/build/frontend.css'),);
 
 	}
+
+	    wp_enqueue_script(
+        'my-custom-script', 
+        get_template_directory_uri() . '/build/frontend.js', 
+        array(), 
+        '1.0.0', 
+        true 
+    );
 endif;
 add_action( 'wp_enqueue_scripts', 'twentytwentyfive_enqueue_styles' );
 

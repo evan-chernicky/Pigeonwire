@@ -1,3 +1,5 @@
+//scss
 import './scss/front-end.scss';
 
-console.log('hello from frontend')
+//js
+import './js/home';

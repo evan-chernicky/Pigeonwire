@@ -64,6 +64,10 @@ picture {
   z-index: 2;
 }
 
+.homepage-projects-decoration {
+  width: 600px;
+}
+
 header {
   position: fixed;
   left: 0;
