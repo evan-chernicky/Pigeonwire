@@ -1,0 +1,16 @@
+
+.linkbox {
+        background: black;
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        position: relative;
+        background: var(--wp--preset--color--grey);
+        padding: 45px;
+    }
+}
+

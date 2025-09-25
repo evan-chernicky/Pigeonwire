@@ -164,3 +164,12 @@ endif;
 
 // Remove admin bar for all users on frontend
 add_filter('show_admin_bar', '__return_false');
+
+
+// Register  new blocks
+function custom_blocks() {
+  wp_localize_script('wp-editor', 'ourThemeData', array('themePath' => get_stylesheet_directory_uri()));
+  
+  register_block_type_from_metadata(__DIR__ . '/build/blocks/linkbox');
+}
+add_action('init', 'custom_blocks');

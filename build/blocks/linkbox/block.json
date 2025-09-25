@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pigeonwire/linkbox",
+  "title": "Link Box",
+  "supports": {
+    "align": [
+      "full"
+    ]
+  },
+  "attributes": {
+    "imgID": {
+      "type": "number"
+    },
+    "imgURL": {
+      "type": "string"
+    },
+    "linkURL": {
+      "type": "string"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css"
+}
