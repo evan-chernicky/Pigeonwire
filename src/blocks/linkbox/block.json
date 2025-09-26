@@ -9,7 +9,8 @@
     "attributes": {
         "imgID": {"type": "number"},
         "imgURL": {"type": "string"},
-        "linkURL": {"type": "string"}
+        "linkURL": {"type": "string"},
+        "linkObject": { "type": "object", "default": {"url": ""} }
     },
     "editorScript": "file:./index.js",
     "render": "file:./render.php",

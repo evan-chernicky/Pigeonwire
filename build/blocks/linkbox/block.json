@@ -17,6 +17,12 @@
     },
     "linkURL": {
       "type": "string"
+    },
+    "linkObject": {
+      "type": "object",
+      "default": {
+        "url": ""
+      }
     }
   },
   "editorScript": "file:./index.js",
