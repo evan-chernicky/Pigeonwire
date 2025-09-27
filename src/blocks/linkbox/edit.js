@@ -1,7 +1,7 @@
 import apiFetch from '@wordpress/api-fetch'
 import { link } from "@wordpress/icons"
 import {Button, PanelBody, Popover, PanelRow, ToolbarButton, ToolbarGroup} from '@wordpress/components'
-import { useBlockProps, BlockControls, InspectorControls, MediaUpload, MediaUploadCheck, __experimentalLinkControl as LinkControl } from "@wordpress/block-editor"
+import { useBlockProps, BlockControls, InspectorControls, MediaUpload, MediaUploadCheck, LinkControl } from "@wordpress/block-editor"
 import placeholder from '../../../assets/images/placeholder.jpg'
 import {useEffect, useState} from "@wordpress/element"
 
@@ -9,7 +9,7 @@ import {useEffect, useState} from "@wordpress/element"
 export default function Edit(props) {
     const blockProps = useBlockProps()
     const [isLinkPickerVisible, setIsLinkPickerVisible] = useState(false)
-    const {imgID, imgURL, linkURL, linkObject} = props.attributes
+    const {imgID, imgURL, linkObject} = props.attributes
 
     useEffect(() => {
         if (!imgURL) {

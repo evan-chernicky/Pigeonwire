@@ -3,18 +3,18 @@
 function register_cpt() {
 
     $labels = array(
-        'name'                  => _x( 'Work', 'Post type general name', 'work' ),
-        'singular_name'         => _x( 'work', 'Post type singular name', 'work' ),
-        'menu_name'             => _x( 'Work', 'Admin Menu text', 'work' ),
-        'name_admin_bar'        => _x( 'Work', 'Add New on Toolbar', 'work' ),
-        'add_new'               => __( 'Add New', 'work' ),
-        'add_new_item'          => __( 'Add New Work', 'work' ),
-        'new_item'              => __( 'New Work', 'work' ),
-        'edit_item'             => __( 'Edit Work', 'work' ),
-        'view_item'             => __( 'View Work', 'work' ),
-        'all_items'             => __( 'All Work', 'work' ),
-        'search_items'          => __( 'Search Work', 'work' ),
-        'not_found'             => __( 'No Work found.', 'work' ),
+        'name'                  => _x( 'Work', 'Post type general name', 'Work' ),
+        'singular_name'         => _x( 'Work', 'Post type singular name', 'Work' ),
+        'menu_name'             => _x( 'Work', 'Admin Menu text', 'Work' ),
+        'name_admin_bar'        => _x( 'Work', 'Add New on Toolbar', 'Work' ),
+        'add_new'               => __( 'Add New', 'Work' ),
+        'add_new_item'          => __( 'Add New Work', 'Work' ),
+        'new_item'              => __( 'New Work', 'Work' ),
+        'edit_item'             => __( 'Edit Work', 'Work' ),
+        'view_item'             => __( 'View Work', 'Work' ),
+        'all_items'             => __( 'All Work', 'Work' ),
+        'search_items'          => __( 'Search Work', 'Work' ),
+        'not_found'             => __( 'No Work found.', 'Work' ),
     );
 
     $args = array(

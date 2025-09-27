@@ -4,6 +4,7 @@ function register_blocks() {
     //Make theme path available to JS.
     wp_localize_script('wp-editor', 'ourThemeData', array('themePath' => get_stylesheet_directory_uri()));
     
-    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/linkbox');
+    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/linkbox'); 
+    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/worklistings');
 }
 add_action('init', 'register_blocks');
