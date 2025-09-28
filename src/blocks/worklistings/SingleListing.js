@@ -3,7 +3,7 @@ import placeholder from '../../../assets/images/placeholder.jpg'
 
 function SingleListing({work}) {
     const {acf, featured_media, link} = work
-    const {category, client} = acf
+    const {category, client} = acf || {}
 
     const image = useSelect(
         ( select ) =>
