@@ -1,6 +1,25 @@
 
-.linkbox {
-        background: black;
+.work-listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    list-style-type: none;
+    padding-left: 0;
+
+    &__item {
+        text-decoration: none !important;  
+        &:hover {
+            .work-listings__image {
+                transform: scale(1.05);
+            }
+            .work-listings__arrow {
+                background-color: #000000;
+            }
+            .work-listings__arrow svg {
+                transform: rotate(225deg);
+            }
+        } 
+    }
 
     &__image-container {
         display: flex;
@@ -11,6 +30,45 @@
         position: relative;
         background: var(--wp--preset--color--grey);
         padding: 45px;
+        margin-bottom: 1rem;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: 0.4s;
+        will-change: transform;
+    }
+
+    &__category {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--wp--preset--color--grey);
+        text-decoration: none !important;   
+    }
+
+    &__client {
+        font-size: 1.5rem;
+        text-decoration: none !important;   
+        color: var(--wp--preset--color--black);
+        margin-top: .25rem;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        background-color: rgba(255,255,255,0.5);
+        padding: 17.5px;
+        border-radius: 50%;
+        transition: 0.4s;
+        svg {
+            transform: rotate(180deg);
+            transition: 0.4s;
+        }
     }
 }
 

@@ -10,3 +10,18 @@ a {
   align-items: center; 
   justify-content: center;
 }
+
+/*fixing weird issue with borders on linked images in editor, can't find reason for it yet */
+img {
+  border: none !important;
+}
+
+.editor-styles-wrapper img,
+.block-editor-block-list__block img {
+    border: 0 !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    box-shadow: none !important; /* in case shadow is causing black line */
+}

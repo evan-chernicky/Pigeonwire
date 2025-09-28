@@ -1,5 +1,8 @@
 <?php
 
+// Adds custom functions to theme.
+require_once(get_template_directory().'/functions/utility-functions.php'); 
+
 // Allows for post formats.
 require_once(get_template_directory().'/functions/post-formats.php'); 
 
@@ -14,3 +17,4 @@ require_once(get_template_directory().'/functions/register-blocks.php');
 
 // Remove admin bar for all users on frontend
 add_filter('show_admin_bar', '__return_false');
+
