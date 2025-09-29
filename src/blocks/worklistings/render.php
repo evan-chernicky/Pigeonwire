@@ -1,9 +1,23 @@
 <?php
-$workItems = new WP_Query(array(
+$args = array(
     'posts_per_page' => -1,
     'post_type' => 'work',
-));
+    'orderby' => 'date', 
+    'order' => 'ASC', //gets oldest to newest   
+);
 
+//If the isFeaturedListings attribute is true, we need to modify the query to only get the featured listings.
+if ($attributes['isFeaturedListings']) {
+    $args['meta_query'] = array(
+        array(
+            'key' => 'show_in_homepage_featured',
+            'value' => '1',
+            'compare' => '=',
+        )
+    );
+}
+
+$workItems = new WP_Query($args);
 ?>
 
 <?php

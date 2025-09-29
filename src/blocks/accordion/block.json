@@ -1,11 +1,8 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "pigeonwire/worklistings",
-    "title": "Work Listings",
-    "attributes": {
-        "isFeaturedListings": {"type": "boolean", "default": "false"}
-    },
+    "name": "pigeonwire/accordion",
+    "title": "Accordion",
     "supports": {
         "spacing": {
         "margin": true,
