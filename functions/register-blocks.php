@@ -7,6 +7,7 @@ function register_blocks() {
     // register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/linkbox'); #Moving in different direction with this block..
     register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/worklistings');
     register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/accordion');    
+    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/accordionitem');    
 }
 add_action('init', 'register_blocks');
 

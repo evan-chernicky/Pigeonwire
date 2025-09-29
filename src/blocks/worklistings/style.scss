@@ -62,12 +62,15 @@
         bottom: 15px;
         left: 15px;
         background-color: rgba(255,255,255,0.5);
-        padding: 17.5px;
+        padding: 33.5px;
         border-radius: 50%;
         transition: 0.4s;
         svg {
             transform: rotate(180deg);
             transition: 0.4s;
+            position: absolute;
+            inset: 0;
+            margin: auto;
         }
     }
 }

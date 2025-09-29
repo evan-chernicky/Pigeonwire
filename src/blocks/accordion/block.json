@@ -6,7 +6,7 @@
     "supports": {
         "spacing": {
         "margin": true,
-        "padding": false 
+        "padding": false
         }
     },
     "editorScript": "file:./index.js",

@@ -89,12 +89,12 @@
 				{
 					"slug": "medium",
 					"name": "Medium",
-					"size": "var(--font-size-medium)"
+					"size": "clamp(1.25rem, 1.15rem + 0.5333vw, 1.75rem)"
 				},
 				{
 					"slug": "large",
 					"name": "Large",
-					"size": "var(--font-size-large)"
+					"size": "clamp(1.3rem, 1.375rem + 0.6667vw, 2.125rem)"
 				},
 				{
 					"name": "Extra Large",
