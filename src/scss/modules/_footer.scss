@@ -1,0 +1,13 @@
+footer {
+    position: relative;
+
+    .decorative-footer {
+        margin: 0;
+        padding: 0;
+        position: absolute !important;
+        top: -5px;
+        right: 0;
+        width: 600px;
+    }
+}
+

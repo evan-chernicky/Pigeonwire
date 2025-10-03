@@ -1,5 +1,6 @@
 import {InnerBlocks, useBlockProps} from "@wordpress/block-editor"
 import { useSelect } from "@wordpress/data";
+import { justifyCenter } from "@wordpress/icons";
 
 export default function Edit({ clientId }) {
     const blockProps = useBlockProps()
@@ -14,15 +15,25 @@ export default function Edit({ clientId }) {
         [clientId]
     );
 
+    const noInnerBlocksStyle = {
+        padding: '20px',
+        border: '1px dotted #000',
+        display: 'flex',
+        gap: '10px',
+        justifyCenter: 'center',
+        flexDirection: 'column',
+        textAlign: 'center'
+    };
+
   return (
         <div {...blockProps}>
-            <div className="accordion" style={ hasInnerBlocks ? {padding: '20px 0', border: '1px dotted #000'} : { padding: '20px', border: '1px dotted #000', display: 'flex', gap: '10px' } }>
+            <div className="accordion" style={ hasInnerBlocks ? null : noInnerBlocksStyle }>
                 {!hasInnerBlocks && (
-                    <p style={{ color: '#000', fontStyle: 'italic' }}>
+                    <p style={{ color: '#000', fontStyle: 'italic', fontSize: '14px' }}>
                         Add an accordion item here...
                     </p>
                 )}
-                <InnerBlocks allowedBlocks={['pigeonwire/accordionitem']} />
+                <InnerBlocks renderAppender={InnerBlocks.ButtonBlockAppender} allowedBlocks={['pigeonwire/accordionitem']} />
             </div>
         </div>
   )

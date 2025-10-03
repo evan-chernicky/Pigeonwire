@@ -1,3 +1,4 @@
+import '@lottiefiles/lottie-player' //importing lottie player web component
+
 import './scss/editor.scss';
 
-console.log('hello from backend')

@@ -3,6 +3,7 @@
     "apiVersion": 3,
     "name": "pigeonwire/accordionitem",
     "title": "Accordion Item",
+    "parent": [ "pigeonwire/accordion" ],
     "attributes": {
         "heading": {
             "type": "string",
@@ -14,6 +15,7 @@
         }
     },
     "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
     "render": "file:./render.php",
     "style": "file:./style-index.css",
     "viewScript": "file:./view.js"
