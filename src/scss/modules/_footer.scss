@@ -1,5 +1,6 @@
-footer {
+.footer {
     position: relative;
+    overflow: hidden;
 
     .decorative-footer {
         margin: 0;
@@ -8,6 +9,13 @@ footer {
         top: -5px;
         right: 0;
         width: 600px;
+    }
+
+    .footer-pigeon {
+        position: absolute;
+        bottom: -5rem;
+        width: 525px;
+        right: -11rem;
     }
 }
 

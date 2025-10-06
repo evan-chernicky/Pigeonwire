@@ -18,7 +18,8 @@ require_once(get_template_directory().'/functions/register-blocks.php');
 // Remove Emoji Support
 require_once(get_template_directory().'/functions/remove-emoji-support.php'); 
 
+// Allow additional filetypes for upload
+require_once(get_template_directory().'/functions/remove-emoji-support.php'); 
 
 // Remove admin bar for all users on frontend
 add_filter('show_admin_bar', '__return_false');
-

@@ -25,3 +25,13 @@ if ( ! function_exists( 'enqueue_styles' ) ) {
 	}
 };
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+
+
+add_action( 'enqueue_block_editor_assets', function() {
+    wp_enqueue_style(
+        'my-editor-styles',
+        get_stylesheet_directory_uri() . '/build/editor.css',
+        [],
+        filemtime( get_stylesheet_directory() . '/build/editor.css' )
+    );
+} );

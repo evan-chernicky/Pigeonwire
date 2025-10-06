@@ -1,8 +1,8 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "pigeonwire/linkbox",
-    "title": "Work Link Box",
+    "name": "pigeonwire/lottie",
+    "title": "Lottie Animation",
     "supports": {
         "align": ["full"]
     },
@@ -10,9 +10,15 @@
         "src": {
             "type": "string",
             "default": ""
+        },
+        "isTapToPlay": {
+            "type": "boolean",
+            "default": false
         }
     },
     "editorScript": "file:./index.js",
     "render": "file:./render.php",
-    "style": "file:./style-index.css"
+    "style": "file:./style-index.css",
+    "script": "file:./script.js",
+    "viewScript": "file:./frontend.js"
 }
