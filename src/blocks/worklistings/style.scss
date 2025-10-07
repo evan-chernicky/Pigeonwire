@@ -1,3 +1,4 @@
+@use '../../../src/scss/abstracts' as base;
 
 .work-listings {
     display: grid;
@@ -5,6 +6,10 @@
     gap: 35px;
     list-style-type: none;
     padding-left: 0;
+
+    @include base.atLarge {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     &__item {
         text-decoration: none !important;  

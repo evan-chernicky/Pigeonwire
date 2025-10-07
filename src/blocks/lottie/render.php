@@ -7,14 +7,16 @@ $pointer = ! empty( $attributes['isTapToPlay'] ) ? 'style="cursor: pointer;"' : 
 
 ?>
 <?php if ( $src ) : ?>
-<lottie-player
-  src="<?php echo $src; ?>"
-  background="transparent"
-  speed="1"
-  <?php echo $autoplay; ?>
-  <?php echo $loop; ?>
-  <?php echo $tapToPlay; ?>
-  <?php echo $pointer; ?>
-  >
-</lottie-player>
+  <div class="lottie-container">
+    <lottie-player
+      src="<?php echo $src; ?>"
+      background="transparent"
+      speed="1"
+      <?php echo $autoplay; ?>
+      <?php echo $loop; ?>
+      <?php echo $tapToPlay; ?>
+      <?php echo $pointer; ?>
+      >
+    </lottie-player>
+  </div>
 <?php endif; ?>

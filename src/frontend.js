@@ -1,6 +1,5 @@
 //js
-import './js/home';
+import './js/smoothscroll';
 
 //scss
 import './scss/front-end.scss';
-

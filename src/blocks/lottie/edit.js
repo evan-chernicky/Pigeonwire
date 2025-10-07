@@ -3,9 +3,7 @@ import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
 
 export default function Edit({ attributes, setAttributes }) {
   const { src, isTapToPlay } = attributes;
-  const blockProps = useBlockProps();
-
-  console.log(themeData.themePath);
+  const blockProps = useBlockProps({className: 'lottie-player'});
 
   return (
     <>
