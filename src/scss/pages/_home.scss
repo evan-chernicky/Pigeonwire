@@ -1,3 +1,5 @@
+@use '../abstracts' as base;
+
 .hero-decoration {
     position: relative;
     z-index: 1;
@@ -32,4 +34,8 @@
 
 .homepage-projects-decoration {
     width: 600px;
+    @include base.atMedium {
+        width: 35%;
+        margin-left: 65% !important;
+    }
 }

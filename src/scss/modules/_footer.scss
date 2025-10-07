@@ -1,3 +1,5 @@
+@use '../abstracts' as base;
+
 .footer {
     position: relative;
     overflow: hidden;
@@ -9,13 +11,28 @@
         top: -5px;
         right: 0;
         width: 600px;
+        @include base.atMedium {
+            transform: rotate(180deg);
+            bottom: 0;
+
+        }
     }
 
-    .footer-pigeon {
+    & > .footer-pigeon {
         position: absolute;
         bottom: -5rem;
         width: 525px;
         right: -11rem;
+        @include base.atMedium {
+            right: -10rem;
+        }
+    }
+
+    .bottom-footer {
+        @include base.atMedium {
+            margin-bottom: 32rem;
+            margin-top: 2rem;
+        }
     }
 }
 
