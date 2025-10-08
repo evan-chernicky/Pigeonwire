@@ -6,6 +6,19 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+    background: rgba(255, 255, 255, 0.85);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out 0.3s;
+    backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px);
+
+    &.scrolled {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    &.header-hidden {
+        transform: translateY(-100%);
+    }
+
     @include base.atMedium {
     .header-contact {
             display: none;
