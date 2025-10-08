@@ -1,5 +1,20 @@
 <?php
 
+function my_inline_head_styles() {
+    ?>
+    <style>
+        .is-layout-constrained > .alignwide {
+            width: 100%;
+            max-width: var(--wp--style--global--wide-size);
+        }
+        .entry-content {
+            opacity: 0;
+        }
+    </style>
+    <?php
+}
+add_action('wp_head', 'my_inline_head_styles');
+
 // Open wrapper after header template-part
 add_action( 'render_block_core/template-part', function( $block_content, $block ) {
     // Insert wrapper opening *after* the header template-part is output
