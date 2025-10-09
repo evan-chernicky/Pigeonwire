@@ -15,7 +15,7 @@ function initHome() {
       end: "top+=800 top",       
             toggleActions: "play reverse play reverse",
             scrub: true,
-            markers: true
+            markers: false
         }
     });
 
