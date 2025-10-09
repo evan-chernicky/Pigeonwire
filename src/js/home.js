@@ -11,11 +11,11 @@ function initHome() {
     let tl = gsap.timeline({
         scrollTrigger: {
       trigger: ".hero",     
-      start: "top top", 
+      start: "top+=100 top", 
       end: "top+=800 top",       
             toggleActions: "play reverse play reverse",
             scrub: true,
-            markers: false
+            markers: true
         }
     });
 
