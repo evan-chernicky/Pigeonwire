@@ -8,7 +8,8 @@ function register_blocks() {
     register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/worklistings');
     register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/accordion');    
     register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/accordionitem');    
-    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/lottie');    
+    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/lottie');   
+    register_block_type_from_metadata(get_stylesheet_directory() . '/build/blocks/videobackground');     
 }
 add_action('init', 'register_blocks');
 
