@@ -22,6 +22,7 @@
   "dependencies": {
     "@lottiefiles/lottie-player": "^2.0.12",
     "@wordpress/icons": "^10.31.0",
+    "@wordpress/media-utils": "^5.32.0",
     "gsap": "^3.13.0"
   }
 }

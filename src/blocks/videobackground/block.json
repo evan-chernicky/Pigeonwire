@@ -5,7 +5,10 @@
     "title": "Video Background",
     "attributes": {
         "videoID": {"type": "number"},
-        "videoURL": {"type": "string"}
+        "videoURL": {"type": "string"},
+        "fileName": {"type": "string"},
+        "posterID": {"type": "number"},
+        "posterURL": {"type": "string"}
     },
     "supports": {
         "spacing": {
@@ -15,6 +18,7 @@
     },
     "editorScript": "file:./index.js",
     "render": "file:./render.php",
-    "style": "file:./style-index.css"
+    "style": "file:./style-index.css",
+    "editorStyle": "file:./index.css"
 }
 
