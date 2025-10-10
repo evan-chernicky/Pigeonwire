@@ -21,13 +21,16 @@ export default function Edit({ attributes, setAttributes }) {
         }
     },[posterID])
 
-    //We just want to preview the medium sized image if we can
+    //Prefer the medium-sized image if available for performance reasons.
     const mediumPosterURL = posterImage?.media_details?.sizes?.medium?.source_url || posterImage?.source_url || null;
     
-    //Attempt to show uploaded URL, else local uploaded into drop area, else nothing
+    // Use a locally hosted preview image while uploading. Fallback to poster image or none.
     const backgroundURL = localPreview || mediumPosterURL  || '';
 
-    // Retrieves Gutenberg's internal file upload function for handling  media uploads.
+    /*
+        Retrieves Gutenberg's media upload function 
+        Required because DropZone does not natively handle file uploads. :(
+    */
     const mediaFileUpload = useSelect((select) => select(blockEditorStore).getSettings().mediaUpload, []);
 
     function onFileDrop(files) {
@@ -61,6 +64,9 @@ export default function Edit({ attributes, setAttributes }) {
         <div {...blockProps}>
             <InspectorControls>
                 <PanelBody title="Background" initialOpen={true}>
+                {/* 
+                    Background Video fields in Block Settings Sidebar  
+                */}
                     <PanelRow>
                         <BaseControl.VisualLabel>Background Video</BaseControl.VisualLabel>
                     </PanelRow>
@@ -78,6 +84,9 @@ export default function Edit({ attributes, setAttributes }) {
                         {videoURL && <span style={{ marginLeft: '10px' }}>{fileName}</span>}
                     </PanelRow>
                     <div  style={{marginBottom: '20px'}}></div>
+                    {/* 
+                        Background Poster fields in Block Settings Sidebar  
+                    */}
                     <PanelRow>
                         <BaseControl.VisualLabel>Background Poster</BaseControl.VisualLabel>
                     </PanelRow>
@@ -109,6 +118,9 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                 </PanelBody>
             </InspectorControls>
+            {/* 
+                Media Placeholder which shows upload settings in Block Editor Canvas if no video yet 
+            */}
             {!videoURL ? (
                 <MediaPlaceholder
                     onSelect={ (video) => {
