@@ -1,9 +1,7 @@
 import {useState, useEffect} from "@wordpress/element"
-import { useBlockProps, MediaUpload, MediaUploadCheck, InspectorControls, InnerBlocks, MediaPlaceholder } from "@wordpress/block-editor"
+import { useBlockProps, MediaUpload, MediaUploadCheck, InspectorControls, InnerBlocks, MediaPlaceholder, store as blockEditorStore } from "@wordpress/block-editor"
 import {Button, PanelBody, PanelRow, DropZone, BaseControl, Spinner } from '@wordpress/components'
 import { useSelect } from '@wordpress/data';
-import { store as blockEditorStore } from '@wordpress/block-editor';
-
 
 export default function Edit({ attributes, setAttributes }) {
     const blockProps = useBlockProps()
