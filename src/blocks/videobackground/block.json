@@ -14,7 +14,8 @@
         "spacing": {
             "margin": true,
             "padding": true 
-        }
+        },
+        "align": ["full"]
     },
     "editorScript": "file:./index.js",
     "render": "file:./render.php",

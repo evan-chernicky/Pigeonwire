@@ -7,6 +7,12 @@
     transform: translateX(-30vw);
 }
 
+.wp-block-safe-svg-svg-icon.safe-svg-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .hero-decoration {
     position: relative;
     z-index: 1;
@@ -66,4 +72,21 @@
         }
     }
 
+}
+
+.about-decoration .wp-block-safe-svg-svg-icon.safe-svg-cover {
+    position: relative;
+    height: auto;
+    width
+    svg {
+        height: auto;
+    }
+
+    .safe-svg-inside {
+        height: auto !important;
+        width: 102% !important;
+        max-width: 102% !important;
+        left: -1% !important;
+        position: relative;
+    }
 }

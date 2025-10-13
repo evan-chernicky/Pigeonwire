@@ -1,3 +1,8 @@
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener('DOMContentLoaded', function() {
     const lotties = document.querySelectorAll('lottie-player')
 
@@ -16,6 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
             player.addEventListener("complete", () => {
                 isPlaying = false;
                 player.stop();        // resets to the first frame
+            });
+
+            //Play once when entering viewpoint
+            ScrollTrigger.create({
+                trigger: player,
+                start: "top 80%", 
+                onEnter: () => {
+                    player.play()
+                },
+                once: true, 
             });
         }
     })
