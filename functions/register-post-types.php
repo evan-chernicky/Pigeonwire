@@ -20,14 +20,14 @@ function register_cpt() {
     $args = array(
         'labels'             => $labels,
         'public'             => true,                       
-        'has_archive'        => true,                      
+        'has_archive'        => false,                      
         'rewrite'            => array( 'slug' => 'work' ),
         'show_in_rest'       => true,                        
-        'menu_icon'          => 'dashicons-building',        // Dashicon for admin menu
+        'menu_icon'          => 'dashicons-building',     
         'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
-        'hierarchical'       => false,                       // Set to true if behaves like pages
+        'hierarchical'       => false,  
     );
 
     register_post_type( 'work', $args );
 }
-add_action( 'init', 'register_cpt' );
+add_action( 'init', 'register_cpt',0 );
