@@ -25,8 +25,8 @@ function SingleListing({work}) {
                 </div>
             </div>
             <div>
-                <span className="work-listings__category">{category}</span>
-                <h3 className="work-listings__client">{client}</h3>
+                <span className="work-listings__category">{category?.simple_value_formatted}</span>
+                <h3 className="work-listings__client">{client?.simple_value_formatted}</h3>
             </div>
         </a>
     </li>

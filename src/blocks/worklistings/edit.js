@@ -27,7 +27,7 @@ export default function Edit({ attributes, setAttributes }) {
     }
 
     // Filter to only featured listings
-    const filteredWorks = isFeaturedListings ? works.filter(work => work?.acf?.show_in_homepage_featured === true) : works;
+    const filteredWorks = isFeaturedListings ? works.filter(work => work?.acf?.show_in_homepage_featured.value === "1") : works;
 
     return (
         <div {...blockProps}>
@@ -43,7 +43,7 @@ export default function Edit({ attributes, setAttributes }) {
                 </PanelBody>
             </InspectorControls>
             <ul className="work-listings">
-                {filteredWorks.map((work) => <SingleListing key={work.id} work={work} />)}
+                {filteredWorks && filteredWorks.map((work) => <SingleListing key={work.id} work={work} />)}
             </ul> 
         </div>
     )

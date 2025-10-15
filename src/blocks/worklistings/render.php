@@ -3,7 +3,8 @@ $args = array(
     'posts_per_page' => -1,
     'post_type' => 'work',
     'orderby' => 'date', 
-    'order' => 'ASC', //gets oldest to newest   
+    'order' => 'ASC', //gets oldest to newest 
+    'post__not_in'   => array(get_the_ID())  
 );
 
 //If the isFeaturedListings attribute is true, we need to modify the query to only get the featured listings.
