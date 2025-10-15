@@ -1,0 +1,7 @@
+@use '../abstracts' as base;
+
+.work-image > div {
+    @include base.atMedium {
+        padding: 45px !important;
+    }
+}

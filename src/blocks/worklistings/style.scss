@@ -9,7 +9,7 @@
     padding-left: 0;
 
     @include base.atLarge {
-        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row;
     }
 
     &__item {

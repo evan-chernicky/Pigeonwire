@@ -5,6 +5,10 @@
     bottom: -445px;
     left: 50%;
     transform: translateX(-30vw);
+
+    @media screen and (max-height: 720px) {
+        bottom: -527px;
+    }
 }
 
 .wp-block-safe-svg-svg-icon.safe-svg-cover {
