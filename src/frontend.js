@@ -5,6 +5,7 @@ import './js/entrance-animation';
 import './js/header';
 import './js/home';
 import './js/image-animations';
+import './js/form';
 
 //scss
 import './scss/front-end.scss';

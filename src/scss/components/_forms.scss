@@ -1,0 +1,39 @@
+.gform_wrapper.gravity-theme {
+    input, textarea {
+        border-left: 0 !important; 
+        border-right: 0 !important; 
+        border-top: 0 !important;
+        border-bottom: 1px solid var(--wp--preset--color--grey);
+        outline: 0; 
+    }
+
+    textarea {
+        max-height: 150px;
+    }
+
+    label {
+        color: var(--wp--preset--color--grey);
+        font-weight: 500 !important;
+    }
+
+    .gfield_label {
+        transform: translateY(48px) translateX(7px);
+        transition: 0.3s;
+        cursor: text;
+    }
+
+    .gfield:focus-within .gfield_label, 
+    .gfield.not-empty .gfield_label {
+        transform: translateY(10px) translateX(7px);
+        color: #000;
+    }
+
+    .gfield--type-textarea.not-empty .gfield_label {
+        transform: translateY(5px) translateX(7px);
+    }
+
+    .gfield_required {
+        display: none;
+    }
+
+}
