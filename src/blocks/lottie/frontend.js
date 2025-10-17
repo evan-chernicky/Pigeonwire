@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             //Play once when entering viewpoint
             ScrollTrigger.create({
                 trigger: player,
-                start: "top 80%", 
+                start: "top 60%", 
                 onEnter: () => {
                     player.play()
                 },

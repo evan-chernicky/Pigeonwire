@@ -5,10 +5,12 @@
         border-top: 0 !important;
         border-bottom: 1px solid var(--wp--preset--color--grey);
         outline: 0; 
+        transition: 0.3s;
     }
 
     textarea {
-        max-height: 150px;
+        max-height: 40px;
+        transition: 0.4s;
     }
 
     label {
@@ -17,23 +19,62 @@
     }
 
     .gfield_label {
-        transform: translateY(48px) translateX(7px);
+        transform: translateY(43px) translateX(7px);
         transition: 0.3s;
         cursor: text;
     }
 
-    .gfield:focus-within .gfield_label, 
-    .gfield.not-empty .gfield_label {
-        transform: translateY(10px) translateX(7px);
-        color: #000;
+    .gfield--type-textarea {
+        .gfield_label {
+            transform: translateY(35px) translateX(7px);
+        }
     }
 
-    .gfield--type-textarea.not-empty .gfield_label {
-        transform: translateY(5px) translateX(7px);
+    .gfield:focus-within, 
+    .gfield.not-empty {
+        .gfield_label {
+            transform: translateY(14px) translateX(7px);
+            color: #000;
+        }
+        input, textarea {border-bottom: 1px solid #000;}
+    }
+
+    .gfield--type-textarea:focus-within,
+    .gfield--type-textarea.not-empty {
+        .gfield_label {
+            transform: translateY(7px) translateX(7px);
+        } 
+        textarea {
+            max-height: 150px;
+        }
     }
 
     .gfield_required {
         display: none;
     }
+
+    .gform_button[type="submit"] {
+        margin-top: 1rem;
+        padding: 1rem 2.25rem;
+        background-color: var(--wp--preset--color--black);
+        color: #fff;
+        border-radius: 35px;
+        font-size: var(--wp--preset--font-size--small);
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        font-weight: 500;
+        border: 1px solid #000 !important;
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }   
+
+    .gform_required_legend {
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
 
 }
