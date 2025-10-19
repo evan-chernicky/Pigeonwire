@@ -30,13 +30,15 @@ a {
     height: 16px;
     margin-left: 0.4em;
     vertical-align: middle;
-    background: url('../../assets/icons/arrow-right-up.svg') no-repeat center;
+    background: url('../../assets/icons/arrow-right-up-white.svg') no-repeat center;
     background-size: contain;
   }
 
+  .has-base-background-color.wp-block-button__link::after {
+    background: url('../../assets/icons/arrow-right-up-black.svg') no-repeat center;
+  }
+
   .wp-block-button__link:hover::after {
-    vertical-align: middle;
-    background-size: contain;
     background: url('../../assets/icons/arrow-right-black.svg') no-repeat center;
     width: 20px;
   }

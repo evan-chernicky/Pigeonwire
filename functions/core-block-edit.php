@@ -1,6 +1,6 @@
 <?php
 
-//Adds arrow to button blocks
+//Adds arrow and arrow options UI to button blocks
 add_action('enqueue_block_editor_assets', function () {
     wp_enqueue_script(
         'button-arrow-script',
@@ -11,9 +11,13 @@ add_action('enqueue_block_editor_assets', function () {
     );
 });
 
+//Adds arrow SVG to the front end 
 add_filter( 'render_block_core/button', function( $block_content, $block ) {
     if ( $block['blockName'] === 'core/button' && strpos( $block_content, 'has-arrow') !== false ) {
-        $svg = '<svg class="button-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+       $svg = file_exists( get_template_directory() . '/assets/icons/arrow-right-up-white.svg' )
+                ? file_get_contents( get_template_directory() . '/assets/icons/arrow-right-up-white.svg' )
+                : '';
+
         $block_content = str_replace('</a>', $svg . '</a>', $block_content);
     }
     return $block_content;

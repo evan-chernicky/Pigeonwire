@@ -1,6 +1,48 @@
-a.wp-block-button__link {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+.wp-block-button {
+    a.wp-element-button {
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    &.has-arrow {
+        a.wp-element-button {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            svg {
+                transition: transform 0.3s ease;
+            }
+
+            line, path {
+                transition: stroke 0.3s ease;
+            }
+
+            &:hover, 
+            &:focus {
+                svg {
+                    transform: rotate(45deg);
+                }
+                line, path {
+                    stroke: var(--wp--preset--color--contrast);
+                }
+            }
+
+            &.has-base-background-color {
+                line, path {
+                    stroke: var(--wp--preset--color--contrast);
+                }
+            }
+            
+            &.has-base-background-color:hover,
+            &.has-base-background-color:focus {
+                line, path {
+                    stroke: var(--wp--preset--color--base);
+                }
+            }
+        }
+    }
 }
+
 
 a.has-base-background-color {
     border: 1px solid var(--wp--preset--color--base) !important;
