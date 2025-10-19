@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
+    const menuToggle = header?.querySelector('.mobile-menu-toggle');
+    const mobileMenu = header?.querySelector('.mobile-menu')
     let lastScrollY = window.scrollY;
 
-    function onScroll(e) {
+    //Hides header when the user scrolls down from the hero, but makes it reappear if user starts to scroll back up
+    function onScroll() {
         const currentY = window.scrollY;
 
         // Add 'scrolled' class for styling if scrolled more than 100px
@@ -21,5 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollY = currentY;
     }
 
-    window.addEventListener('scroll', (e) => onScroll(e));
+    window.addEventListener('scroll', () => onScroll());
+    menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('mobile-menu__open'))
 });
+
