@@ -155,7 +155,7 @@
 			"core/button": {
 				"border": {
 					"width": "1px",
-					"color": "currentColor",
+					"color": "var:preset|color|contrast",
 					"style": "solid"
 				},
 				"typography": {
@@ -549,6 +549,11 @@
 				"color": {
 					"background": "var:preset|color|contrast",
 					"text": "var:preset|color|base"
+				},
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var:contrast"
 				},
 				":focus": {
 					"outline": {

@@ -24,6 +24,8 @@ require_once(get_template_directory().'/functions/smoothscroll-wrapper.php');
 // Cleanup Gutenberg
 require_once(get_template_directory().'/functions/gutenberg-cleanup.php'); 
 
+// Edit Core Blocks
+require_once(get_template_directory().'/functions/core-block-edit.php'); 
 
 // Remove admin bar for all users on frontend
 add_filter('show_admin_bar', '__return_false');
