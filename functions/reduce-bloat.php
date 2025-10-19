@@ -1,5 +1,7 @@
 <?php
-
+/*
+    Disable emoji support
+*/
 function disable_wp_emojis() {
     // Remove emoji scripts
     remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -24,3 +26,34 @@ function disable_wp_emojis() {
     });
 }
 add_action('init', 'disable_wp_emojis');
+
+/*
+    Remove embedding support
+*/
+add_action( 'init', function() {
+    remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+    remove_action( 'wp_head', 'wp_oembed_add_host_js' );
+});
+
+/*
+    Remove RSS feeds
+*/
+function disable_wp_feeds() {
+    wp_die( 'No feed available.' );
+}
+add_action( 'do_feed', 'disable_wp_feeds', 1 );
+add_action( 'do_feed_rdf', 'disable_wp_feeds', 1 );
+add_action( 'do_feed_rss', 'disable_wp_feeds', 1 );
+add_action( 'do_feed_rss2', 'disable_wp_feeds', 1 );
+add_action( 'do_feed_atom', 'disable_wp_feeds', 1 );
+
+/*
+    Remove jQuery
+*/
+add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! is_admin() ) {
+        $scripts->remove( 'jquery' );
+        $scripts->add( 'jquery', false, [ 'jquery-core' ], '1.12.4' );
+    }
+});
+

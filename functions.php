@@ -15,8 +15,8 @@ require_once(get_template_directory().'/functions/enqueue.php');
 // Register new blocks
 require_once(get_template_directory().'/functions/register-blocks.php'); 
 
-// Remove Emoji Support
-require_once(get_template_directory().'/functions/remove-emoji-support.php'); 
+// Turns off multiple wordpress defaults like jquery, emoji support, RSS feeds, and embedding.
+require_once(get_template_directory().'/functions/reduce-bloat.php'); 
 
 // Apply smooth scroll wrapper
 require_once(get_template_directory().'/functions/smoothscroll-wrapper.php'); 
