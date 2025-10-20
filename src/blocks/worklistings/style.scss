@@ -60,6 +60,10 @@
         text-decoration: none !important;   
         color: var(--wp--preset--color--black);
         margin-top: .25rem;
+        @include base.atMedium {
+            font-size: 1.375rem;
+        }
+
     }
 
     &__arrow {

@@ -104,7 +104,7 @@
 				{
 					"name": "Extra Extra Large",
 					"slug": "xx-large",
-					"size": "clamp(2rem, .75rem + 2.1622vw, 4rem)"
+					"size": "clamp(1.5rem, .75rem + 2.1622vw, 4rem)"
 				}
 			],
 			"fontFamilies": [

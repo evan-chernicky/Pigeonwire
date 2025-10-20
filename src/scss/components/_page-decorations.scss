@@ -39,6 +39,10 @@
         height: 100vh;
         min-height: 650px;
         left: 0;
+        @include base.atMedium {
+            top: -1vh;
+            position: absolute;
+        }
     }
 }
 
@@ -47,6 +51,11 @@
     @include base.atMedium {
         width: 35%;
         margin-left: 65% !important;
+
+        .safe-svg-inside {
+            width: auto !important;
+            height: auto !important;
+        }
     }
 }
 
@@ -58,10 +67,23 @@
         position: absolute !important;
         top: -5px;
         right: 0;
-        width: 600px;
+        width: 550px;
+
+        @include base.atExtraLarge {
+            width: 400px;
+        }
+        
         @include base.atMedium {
             transform: rotate(180deg);
             bottom: 0;
+            left: -13rem;
+            height: 50%;
+            top: unset;
+            bottom: 0;
+            width: 550px;
+        }
+        
+        @include base.atMedium {
             left: -10rem;
         }
     }

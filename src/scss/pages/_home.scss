@@ -29,3 +29,13 @@
     position: relative;
     z-index: 2;
 }
+
+.projects-copy {
+    @include base.atMedium {
+        margin: 8rem 0 3rem !important;
+
+        h2 {
+            max-width: 75%;
+        }
+    }
+}

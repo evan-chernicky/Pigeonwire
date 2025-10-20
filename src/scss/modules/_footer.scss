@@ -14,6 +14,16 @@
         }
     }
 
+    h3{
+        @include base.atExtraLarge {
+            max-width: 70%;
+        }
+
+        @include base.atMedium {
+            max-width: unset;
+        }
+    }
+
     .bottom-footer {
         @include base.atMedium {
             margin-bottom: 32rem;
