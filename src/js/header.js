@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', () => onScroll());
 
+    //On mobile menu toggle click
     menuToggle.addEventListener('click', () => {
         isMobileMenuToggled = !isMobileMenuToggled
         header.classList.toggle('mobile-menu-isOpen')
