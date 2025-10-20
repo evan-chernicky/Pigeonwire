@@ -19,7 +19,7 @@ header {
         transform: translateY(-100%);
     }
 
-    .mobile-menu-toggle {
+    .nav-icon-container {
         display: none;
     }
 
@@ -28,7 +28,7 @@ header {
         .desktop-nav {
                 display: none !important;
             }
-        .mobile-menu-toggle {
+        .nav-icon-container {
             display: block;
         }
         .custom-logo-link {
