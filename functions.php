@@ -34,4 +34,4 @@ require_once(get_template_directory().'/functions/wp-head.php');
 add_filter('show_admin_bar', '__return_false');
 
 //Turns off anchor link after form submit which was causing disorienting jumping
-add_filter( 'gform_confirmation_anchor', '__return_true' );
+add_filter( 'gform_confirmation_anchor', '__return_false' );
