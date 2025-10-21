@@ -1,6 +1,6 @@
 <?php
 
-add_action('wp_body_open', function() {
+add_action('wp_head', function() {
     ?>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDMZRXZMR3"></script>

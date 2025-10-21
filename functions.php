@@ -27,8 +27,8 @@ require_once(get_template_directory().'/functions/gutenberg-cleanup.php');
 // Edit Core Blocks
 require_once(get_template_directory().'/functions/core-block-edit.php'); 
 
-// Adds stuff after the body tag is opened
-require_once(get_template_directory().'/functions/wp-body-open.php'); 
+// Adds stuff in head
+require_once(get_template_directory().'/functions/wp-head.php'); 
 
 // Remove admin bar for all users on frontend
 add_filter('show_admin_bar', '__return_false');
