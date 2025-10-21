@@ -37,7 +37,7 @@ header {
     }
 
     .mobile-menu {
-        height: calc(100vh - base.$mobile-header-height + 1px);
+        height: calc(100dvh - base.$mobile-header-height + 1px);
         display: flex;
         align-items: center;
         justify-content: center;
