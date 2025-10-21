@@ -25,3 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 })
+
+
+// 1. Refresh ScrollTrigger when GF form is re-rendered (e.g., AJAX validation)
+document.addEventListener('gform_post_render', function () {
+  ScrollTrigger.refresh();
+});
+
+// 2. Prevent ScrollSmoother from jumping to the bottom after form submission
+document.addEventListener('gform_confirmation_loaded', function (event) {
+  // Pause the smoothing to let GF adjust normally
+  smoother.paused(true);
+
+  // Optional: Scroll manually to form location if needed
+  const form = document.getElementById('gform_' + event.detail.formId);
+  if (form) {
+    gsap.to(window, { scrollTo: form.offsetTop, duration: 0 });
+  }
+
+  // Re-enable smooth scrolling after short delay
+  setTimeout(() => smoother.paused(false), 300);
+});
