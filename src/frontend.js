@@ -9,5 +9,3 @@ import './js/form';
 
 //scss
 import './scss/front-end.scss';
-
-console.log('testing workflow');
