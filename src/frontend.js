@@ -10,4 +10,4 @@ import './js/form';
 //scss
 import './scss/front-end.scss';
 
-console.log('this is a test')
+console.log('this is a test');
