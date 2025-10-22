@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pigeonwire/accordionitem",
+  "title": "Accordion Item",
+  "parent": [
+    "pigeonwire/accordion"
+  ],
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Accordion Item Title"
+    },
+    "content": {
+      "type": "string",
+      "default": "This is an accordion item. You can add content here."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

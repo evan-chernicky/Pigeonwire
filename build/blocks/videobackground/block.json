@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pigeonwire/videobackground",
+  "title": "Video Background",
+  "attributes": {
+    "videoID": {
+      "type": "number"
+    },
+    "videoURL": {
+      "type": "string"
+    },
+    "fileName": {
+      "type": "string"
+    },
+    "posterID": {
+      "type": "number"
+    },
+    "posterURL": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "align": [
+      "full"
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css"
+}

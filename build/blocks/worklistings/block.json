@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pigeonwire/worklistings",
+  "title": "Work Listings",
+  "attributes": {
+    "isFeaturedListings": {
+      "type": "boolean",
+      "default": "false"
+    }
+  },
+  "supports": {
+    "spacing": {
+      "margin": true,
+      "padding": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css"
+}
