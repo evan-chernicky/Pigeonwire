@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/accordionitem/index.css","mappings":";;;AAEI;EAAa;AAAjB;AACI;EAAa;AAEjB,C","sources":["webpack://twentytwentyfive/./src/blocks/accordionitem/editor.scss"],"sourcesContent":["\n.accordion-item {\n    p           {opacity: 1;}\n    button      {cursor: auto;}\n}"],"names":[],"sourceRoot":""}

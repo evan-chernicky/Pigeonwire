@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/lottie/style-index.css","mappings":";;;AAAA;EACI;EACA;AACJ,C","sources":["webpack://twentytwentyfive/./src/blocks/lottie/style.scss"],"sourcesContent":["lottie-player {\n    width: 100%;\n    height: auto;\n}"],"names":[],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/accordion/style-index.css","mappings":";;;AAAA;EACI;AACJ,C","sources":["webpack://twentytwentyfive/./src/blocks/accordion/style.scss"],"sourcesContent":[".accordion {\n    padding-left: 0;\n}"],"names":[],"sourceRoot":""}

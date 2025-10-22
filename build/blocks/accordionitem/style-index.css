@@ -1,0 +1,50 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/accordionitem/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.accordion-item {
+  list-style-type: none;
+  overflow: hidden;
+  border-style: solid;
+  border-color: var(--wp--preset--color--grey);
+  border-width: 0 0 1px 0;
+  transition: max-height 0.4s ease-in-out;
+}
+.accordion-item button {
+  border: 0;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.accordion-item__header {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion-item__header h3 {
+  margin: 0;
+  color: var(--wp--preset--color--contrast);
+}
+.accordion-item__header svg {
+  transition: transform 0.4s ease;
+}
+.accordion-item__content {
+  padding-bottom: 48px;
+}
+.accordion-item__content p {
+  font-family: "Manrope";
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: var(--wp--preset--color--contrast);
+}
+.accordion-item--open svg {
+  transform: rotate(180deg);
+}
+.accordion-item--open .accordion-item__content p {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
